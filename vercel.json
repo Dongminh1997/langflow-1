@@ -1,15 +1,14 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "docker_example/vercel.Dockerfile",
-      "use": "@vercel/static-build"
+    "version": 2,
+    "builds": [
+      {
+        "src": "Dockerfile",  
+        "use": "@vercel/docker" 
+      }
+    ],
+    "env": {
+      "LANGFLOW_HOST": "0.0.0.0",
+      "LANGFLOW_PORT": "7860"
     }
-  ],
-  "env": {
-    "LANGFLOW_DATABASE_URL": "sqlite:////app/data/.cache/langflow/langflow.db",
-    "LANGFLOW_HOST": "0.0.0.0",
-    "LANGFLOW_PORT": "10000",
-    "LANGFLOW_LOG_LEVEL": "INFO"
   }
-}
+  
