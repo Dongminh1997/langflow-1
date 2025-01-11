@@ -11,10 +11,5 @@
       "LANGFLOW_HOST": "0.0.0.0",
       "LANGFLOW_PORT": "10000",
       "LANGFLOW_LOG_LEVEL": "INFO"
-    },
-    "docker": {
-      "image": "node:14",  
-      "dockerfile": "docker/render.Dockerfile"
     }
-  }
   
