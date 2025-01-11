@@ -2,7 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "docker/render.Dockerfile"    }
+      "src": "docker/render.Dockerfile",
+      "use": "@vercel/static-build"
+    }
   ],
   "env": {
     "LANGFLOW_DATABASE_URL": "sqlite:////app/data/.cache/langflow/langflow.db",
